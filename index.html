@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PTO, Please">
+<meta name="theme-color" content="#141218">
+<meta name="description" content="PTO, Please: a silly 8-bit People Operations simulator. Stamp PTO requests, expense reports and job offers while leadership changes the rules every day.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PTO, Please">
+<meta property="og:description" content="A silly 8-bit HR simulator. Stamp the paperwork. Obey the memo. Protect your bonus. Glory to OmniGlob.">
+<meta property="og:image" content="https://captaincoder.github.io/ptoplease/social.png">
+<meta property="og:url" content="https://captaincoder.github.io/ptoplease/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon.png">
+<title>PTO, Please</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #0c0a0f; overflow: hidden; overscroll-behavior: none; }
+  body { display: flex; align-items: center; justify-content: center; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+  #game { image-rendering: pixelated; image-rendering: crisp-edges; touch-action: none; display: block; }
+  #rotate { display: none; position: fixed; inset: 0; background: #141218; color: #e9e1cb; font: 18px/1.5 -apple-system, sans-serif; align-items: center; justify-content: center; text-align: center; padding: 24px; }
+  @media (orientation: portrait) and (max-width: 1100px) { #rotate { display: flex; } }
+</style>
+</head>
+<body>
+<canvas id="game" width="480" height="360"></canvas>
+<div id="rotate"><div><b>Please rotate your iPad.</b><br>People Operations is a landscape-only department.</div></div>
+<script src="js/version.js"></script>
+<script src="js/font.js"></script>
+<script src="js/rng.js"></script>
+<script src="js/content.js"></script>
+<script src="js/gfx.js"></script>
+<script src="js/rules.js"></script>
+<script src="js/cases.js"></script>
+<script src="js/docs.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>

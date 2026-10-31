@@ -1,0 +1,11 @@
+{
+  "name": "PTO, Please",
+  "short_name": "PTO, Please",
+  "description": "A People Operations simulator. Glory to OmniGlob.",
+  "start_url": "./index.html",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#141218",
+  "theme_color": "#141218",
+  "icons": [{ "src": "icon.png", "sizes": "512x512", "type": "image/png" }]
+}
